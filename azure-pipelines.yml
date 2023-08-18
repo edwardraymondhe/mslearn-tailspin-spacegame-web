@@ -1,8 +1,11 @@
 trigger:
 - main
 
-pool: 
+pool:
+  name: Default
   vmImage: ubuntu-latest
+  demands:
+    spaceGame
 
 variables:
   buildConfiguration: 'Release'
